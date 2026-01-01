@@ -157,3 +157,36 @@ backend = "threading"              # I/O + GIL-released ops
 - In-code comments use Slovak for cultural context (project metadata); statistical concepts use English
 - All statistical tests include effect sizes and interpretation thresholds
 - Visualization captions include DPI and intended use (publication vs. web)
+
+# Research Paper Visualizations
+ 
+This directory contains Python scripts to generate visualizations for the research paper on AI in Software Development.
+ 
+## Setup
+ 
+1. **Install Python** (3.8 or higher recommended)
+2. **Install dependencies**:
+   ```
+   pip install -r requirements.txt
+   ```
+ 
+## Usage
+ 
+1. **Generate all visualizations**:
+   ```
+   python generate_figures.py
+   ```
+ 
+2. **Output**:
+   - Figures will be saved in the `figures/` directory
+   - Three files will be generated:
+     - `ai_satisfaction.png`: AI adoption vs. satisfaction
+     - `python_forecast.png`: Python adoption trend with ARIMA forecast
+     - `developer_experience_radar.png`: Radar chart of developer experience
+ 
+## Customization
+ 
+Edit the `generate_figures.py` file to:
+- Update the sample data with your actual research data
+- Adjust visualization styles and colors
+- Modify figure dimensions and labels
